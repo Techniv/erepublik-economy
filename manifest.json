@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+
+
+    "name":         "eRepublik Economy",
+    "version":      "0.0.1",
+    "description":  "eRepublik Economy explorer",
+
+    "permissions": [
+        "unlimitedStorage", "tabs", "alarms",
+        "http://www.erepublik.com/",
+        "http://api.erepublik.com/"
+    ],
+
+    "background":{
+        "scripts": ["scripts/options.js","scripts/background.js"]
+    },
+
+    "page_action":{
+        "default_popup": "index.html",
+        "default_icon": "img/icon.png"
+    }
+}
